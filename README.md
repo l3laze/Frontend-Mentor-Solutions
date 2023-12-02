@@ -6,4 +6,4 @@
 > FM - [@l3laze](https://www.frontendmentor.io/profile/l3laze)
 
 
-- [QR Code](QRCode/index.html)
+- [QR Code](https://l3laze.github.io/Frontend-Mentor-Solutions/QRCode/index.html)
