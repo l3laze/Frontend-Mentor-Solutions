@@ -47,7 +47,7 @@ Users should be able to:
 ### Links
 
 
-- [Solution on FM](https://your-solution-url.com)
+- [Solution on FM](https://www.frontendmentor.io/solutions/responsive-faq-accordion-BrMdCoC9If)
 - [Live Site](Frontend-Mentor-Solutions/FAQ-Accordion/index.html)
 
 
