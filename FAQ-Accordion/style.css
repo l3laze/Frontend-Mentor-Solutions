@@ -1,0 +1,171 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 16px
+
+### Font
+
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700 */
+
+:root {
+  --white: hsl(0deg 0% 100%);
+  --light-pink: hsl(275deg 100% 97%);
+  --gray-purple: hsl(292deg 16% 49%);
+  --purple: hsl(282deg 88% 55%);
+  --dark-purple: hsl(292deg 42% 14%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--light-pink);
+}
+
+body {
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+main {
+  position: relative;
+  top: 18vh;
+  max-width: 600px;
+}
+
+main div {
+  background-color: var(--white);
+  padding: 2.1em 2.5em;
+  border-radius: 1em;
+}
+
+h1 {
+  background-image: url("assets/images/icon-star.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 0.7em;
+  font-size: 3.45em;
+  font-weight: bold;
+  padding-left: 1.2em;
+  color: var(--dark-purple);
+  text-shadow: var(--light-pink) 0 0 1.6px;
+}
+
+button {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+  word-spacing: 0.5px;
+  background-color: var(--white);
+  color: var(--dark-purple);
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 0 0.5em;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+  cursor: pointer;
+  text-shadow: var(--gray-purple) 0 0 1.6px;
+}
+
+button:hover {
+  color: var(--purple);
+}
+
+button:hover::after {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+.expand::after {
+  content: url("assets/images/icon-plus.svg");
+}
+
+.collapse::after {
+  content: url("assets/images/icon-minus.svg");
+}
+
+p {
+  color: var(--gray-purple);
+  margin-bottom: 1.2em;
+  font-size: 1em;
+  text-shadow: var(--light-pink) 0 0 2.5px;
+}
+
+hr {
+  border: 1px solid var(--light-pink);
+}
+
+@media screen and (width <= 900px) {
+  body {
+    background-size: auto;
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    line-height: 1.4;
+  }
+
+  main {
+    max-width: 330px;
+    top: 20vh;
+  }
+
+  main div {
+    border-radius: 0.5em;
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding-left: 1.5em;
+  }
+
+  button {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  button::after {
+    margin-left: 1em;
+  }
+
+  p {
+    margin-top: 1.5em;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (width > 1440px) {
+  body {
+    background-size: contain;
+  }
+}
