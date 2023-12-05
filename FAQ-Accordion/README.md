@@ -14,8 +14,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -48,7 +46,7 @@ Users should be able to:
 
 
 - [Solution on FM](https://www.frontendmentor.io/solutions/responsive-faq-accordion-BrMdCoC9If)
-- [Live Site](Frontend-Mentor-Solutions/FAQ-Accordion/index.html)
+- [Live site](https://l3laze.github.io/Frontend-Mentor-Solutions/FAQ-Accordion/index.html)
 
 
 ## My process

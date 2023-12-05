@@ -39,8 +39,8 @@ Users should be able to:
 ### Links
 
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://l3laze.github.io/Frontend-Mentor-Solutions/Product-Preview-Card-Component)
+- [Solution on FM](https://www.frontendmentor.io/solutions/product-preview-card-component-JG2hjFPfq5)
+- [Live site](https://l3laze.github.io/Frontend-Mentor-Solutions/Product-Preview-Card-Component/index.html)
 
 
 ## My process
@@ -64,4 +64,4 @@ The parent element of a flexbox needs height to place items vertically. Can't co
 ## Author
 
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/l3laze)
+- Frontend Mentor - [@l3laze](https://www.frontendmentor.io/profile/l3laze)
