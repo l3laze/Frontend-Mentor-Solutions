@@ -1,0 +1,196 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
+
+:root {
+  --dark-cyan: hsl(158deg 36% 37%);
+  --cream: hsl(30deg 38% 92%);
+  --very-dark-blue: hsl(212deg 21% 14%);
+  --dark-gray-blue: hsl(228deg 12% 48%);
+  --white: hsl(0deg 0% 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 345px;
+  background-color: var(--white);
+  border-radius: 0.7em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  border-top-left-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+}
+
+.product-category, .full-price {
+  color: var(--dark-gray-blue);
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.9em;
+}
+
+.product-name, .sale-price {
+  font-family: Fraunces, serif;
+}
+
+.full-price, .sale-price {
+  display: inline-block;
+}
+
+.product-name {
+  font-size: 2.25em;
+  line-height: 1;
+  margin-top: 0.4em;
+}
+
+.product-description {
+  margin: 1em 0;
+  color: var(--dark-gray-blue);
+  line-height: 1.7;
+}
+
+.prices {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.full-price {
+  font-size: 0.9em;
+  text-decoration: line-through;
+  margin-left: 1.5em;
+}
+
+.sale-price {
+  font-size: 2.3em;
+  color: var(--dark-cyan);
+}
+
+div {
+  padding: 1.1em 1.8em 2em;
+}
+
+button {
+  width: 100%;
+  border-radius: 0.5em;
+  background-color: var(--dark-cyan);
+  color: white;
+  border: none;
+  padding: 0.8em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  font-size: 1.05em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  height: 3.2em;
+}
+
+button:hover, button:active {
+  background-color: var(--very-dark-blue);
+}
+
+button::before {
+  content: url("images/icon-cart.svg");
+  margin-right: 0.8em;
+}
+
+@media screen and (width >= 600px) {
+  main {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1em 0.5em;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: unset;
+    max-width: 50%;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+  }
+
+  .product-description {
+    margin-top: 1.5em;
+  }
+
+  .prices {
+    margin-top: 0.5em;
+  }
+
+  button {
+    margin-top: 1.5em;
+  }
+}
