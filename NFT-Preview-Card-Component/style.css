@@ -1,0 +1,220 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+:root {
+  --soft-blue: hsl(215deg 51% 70%);
+  --cyan: hsl(178deg 100% 50%);
+  --very-dark-blue-main: hsl(217deg 54% 11%); /* main BG */
+  --very-dark-blue-card: hsl(216deg 50% 16%); /* card BG */
+  --very-dark-blue-line: hsl(215deg 32% 27%); /* line */
+  --white: hsl(0deg 0% 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  font-family: Outfit, sans-serif;
+  background-color: var(--very-dark-blue-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 350px;
+  height: 600px;
+  background-color: var(--very-dark-blue-card);
+  padding: 1.4em 1.35em;
+  border-radius: 0.8em;
+  box-shadow: 
+    rgb(10 10 20) 0 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  margin-top: 1em;
+}
+
+.product-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--white);
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+
+p {
+  color: var(--soft-blue);
+  font-weight: 300;
+  text-align: left;
+}
+
+.sale-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.price-info, .time-info {
+  display: flex;
+  align-items: center;
+}
+
+.price-info img, .time-info img {
+  margin-right: 0.5em;
+}
+
+.price {
+  color: var(--cyan);
+}
+
+.price img {
+  margin-right: 0.3em;
+}
+
+.time-remaining {
+  color: var(--soft-blue);
+}
+
+.time-remaining img {
+  margin-right: 0.3em;
+}
+
+.creator-info {
+  color: var(--soft-blue);
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 2em;
+  border: 1px solid var(--white);
+  margin-right: 1em;
+}
+
+.created-by a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--very-dark-blue-line);
+  align-self: center;
+}
+
+.preview-container {
+  position: relative;
+  width: 100%;
+}
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5em;
+  z-index: -1;
+}
+
+.preview-overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--cyan);
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.preview-container:hover .preview-overlay {
+  opacity: 0.5;
+}
+
+.preview-icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+@media screen and (width <= 375px) {
+  main {
+    max-width: 330px;
+    height: 540px;
+  }
+
+  .content {
+    gap: 0.5em;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
