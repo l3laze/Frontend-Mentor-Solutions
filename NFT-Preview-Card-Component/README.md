@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 
-- [Solution on FM](https://www.frontendmentor.io/solutions)
+- [Solution on FM](https://www.frontendmentor.io/solutions/htmlcss-nft-preview-card-component-T6IeadK_MF)
 - [Live site](https://l3laze.github.io/Frontend-Mentor-Solutions/NFT-Preview-Card-Component/index.html)
 
 
