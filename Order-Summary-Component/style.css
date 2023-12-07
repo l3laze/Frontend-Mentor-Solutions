@@ -1,0 +1,221 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+:root {
+  --pale-blue: hsl(225deg 100% 94%);
+  --bright-blue: hsl(245deg 75% 52%);
+  --very-pale-blue: hsl(225deg 100% 98%);
+  --desaturated-blue: hsl(224deg 23% 55%);
+  --dark-blue: hsl(223deg 47% 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-color: var(--very-pale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 325px;
+  border-radius: 1.2em;
+  background-color: white;
+  box-shadow: var(--desaturated-blue) 0 10px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.hero {
+  border-top-left-radius: 1.2em;
+  border-top-right-radius: 1.2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+section  {
+  width: 100%;
+  gap: 1.5em;
+  text-align: center;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: 900;
+  padding-top: 1.2em;
+}
+
+p {
+  font-weight: 400;
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+}
+
+.plan-container {
+  width: 100%;
+  height: 5em;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.plan-info {
+  margin-left: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-info b {
+  font-weight: 900;
+  font-size: 0.95em;
+}
+
+.plan-info span {
+  color: var(--desaturated-blue);
+}
+
+.music-icon, .plan-info {
+  float: left;
+}
+
+#change-plan {
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+.controls-container {
+  width: 100%;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  padding: 1em 0;
+  border-radius: 0.8em;
+  font-size: 0.95em;
+  font-weight: 900;
+}
+
+#proceed {
+  font-weight: 700;
+  background-color: var(--bright-blue);
+  color: white;
+  box-shadow: var(--desaturated-blue) 0 3px 15px;
+}
+
+#cancel {
+  font-size: 0.95em;
+  font-weight: 900;
+  background-color: transparent;
+  color: var(--desaturated-blue);
+}
+
+/*  --pale-blue: hsl(225deg 100% 94%);
+    --bright-blue: hsl(245deg 75% 52%);
+    --very-pale-blue: hsl(225deg 100% 98%);
+    --desaturated-blue: hsl(224deg 23% 55%);
+    --dark-blue: hsl(223deg 47% 23%); */
+
+#proceed:hover, #cancel:hover {
+  cursor: pointer;
+}
+
+#proceed:active {
+  opacity: 0.7;
+}
+
+#cancel:active {
+  color: var(--dark-blue);
+}
+
+#change-plan:hover {
+  cursor: pointer;
+}
+
+#change-plan:active {
+  color: var(--bright-blue);
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@media screen and (width >= 600px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+  }
+
+  main {
+    max-width: 450px;
+    padding-bottom: 1.5em;
+  }
+
+  section {
+    padding: 0 3em;
+    gap: 2.3em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .plan-container {
+    height: 6em;
+  }
+}
