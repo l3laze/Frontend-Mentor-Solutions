@@ -1,0 +1,154 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+:root {
+  --dark-cyan: hsl(185deg 75% 39%);
+  --very-dark-desaturated-blue: hsl(229deg 23% 23%);
+  --dark-gray-blue: hsl(227deg 10% 46%);
+  --dark-gray: hsl(0deg 0% 59%);
+  --very-light-gray: hsl(0deg 0% 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background-color: var(--dark-cyan);
+}
+
+body {
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: -50vw, 50vw;
+  background-position-y: -10vh, 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  max-width: 330px;
+  min-height: 375px;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  border-radius: 0.8em;
+  box-shadow: var(--dark-gray-blue) 0 15px 40px;
+}
+
+.card-bg {
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+  height: 40%;
+  width: 100%;
+}
+
+.profile-pic {
+  position: relative;
+  top: -15%;
+  outline: 5px solid white;
+  border-radius: 50%;
+  margin-bottom: -2.5em;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-right: 0.1em;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+h1, h2 {
+  display: inline-block;
+}
+
+h3 {
+  font-size: 0.85em;
+  font-weight: 400;
+}
+
+h2, h3, span {
+  color: var(--dark-gray);
+}
+
+.profile-info {
+  border: none;
+  border-bottom: 2px inset var(--very-light-gray);
+  padding-bottom: 1em;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5em;
+  margin-bottom: 1em;
+}
+
+section div {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-content span {
+  font-size: 0.6em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+@media screen and (width > 600px) {
+  body {
+    background-position-x: -20vw, 45vw;
+    background-position-y: -40vh, 55vh;
+  }
+}
