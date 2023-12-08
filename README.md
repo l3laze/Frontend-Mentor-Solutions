@@ -11,3 +11,4 @@
 - [Product Preview Card Component](https://l3laze.github.io/Frontend-Mentor-Solutions/Product-Preview-Card-Component/index.html)
 - [NFT Preview Card Component](https://l3laze.github.io/Frontend-Mentor-Solutions/NFT-Preview-Card-Component/index.html)
 - [Order Summary Component](https://l3laze.github.io/Frontend-Mentor-Solutions/Order-Summary-Component/index.html)
+- [Profile Card Component](https://l3laze.github.io/Frontend-Mentor-Solutions/Profile-Card-Component/index.html)

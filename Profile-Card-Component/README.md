@@ -35,7 +35,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 
-- [Solution on FM](#)
+- [Solution on FM](https://www.frontendmentor.io/solutions/html5css3-profile-card-component-VOIzkpoUN1)
 - [Live site](https://l3laze.github.io/Frontend-Mentor-Solutions/Profile-Card-Component/index.html)
 
 
